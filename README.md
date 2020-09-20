@@ -1,5 +1,5 @@
 ## Tradingview
 
-This is a simulator web app for japanese real estate
+This is a stock screener
 
 [Visit here](https://viuts.github.io/tradingview/)
