@@ -4,13 +4,13 @@ import { Provider as MobxProvider } from 'mobx-react'
 import { rootStore } from '../Stores'
 
 import Header from '../Components/Header'
-import SimulatorPage from './ScreenPage'
+import ScreenPage from './ScreenPage'
 
 const App = () => (
   <MobxProvider {...rootStore}>
     <>
       <Header />
-      <SimulatorPage />
+      <ScreenPage />
     </>
   </MobxProvider>
 )
