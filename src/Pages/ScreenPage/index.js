@@ -51,6 +51,10 @@ const ScreenPage = ({
     // Open next item
     const nextItem = stockStore.items[currentIndex + 1]
     openItem(nextItem)
+
+    setTimeout(() => {
+      document.querySelector('tr[data-current]').scrollIntoView()
+    }, 100)
   }
 
   useEffect(() => {
@@ -140,6 +144,7 @@ const ScreenPage = ({
               rowProps={(item) => {
                 if (stockStore.current && item.TICKER === stockStore.current.TICKER) {
                   return {
+                    'data-current': 'true',
                     style: {
                       background: '#FFFFE0',
                     },
